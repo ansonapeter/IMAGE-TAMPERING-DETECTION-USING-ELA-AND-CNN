@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome | DeepFake Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+</head>
+<body>
+    <div class="hero">
+        <h1>Welcome to the DeepFake Detector</h1>
+        <p>Detect fake images using Error Level Analysis (ELA) and a deep learning model.</p>
+        <a href="{{ url_for('ela_page') }}" class="btn">Start Analyzing</a>
+    </div>
+</body>
+</html>

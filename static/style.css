@@ -1,0 +1,103 @@
+/* ✅ Background Image and Overlay */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-size: cover;
+    padding: 20px;
+    margin: 0;
+    position: relative;
+}
+
+/* ✅ Overlay to darken background for readability */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(7, 0, 0, 0.904); /* semi-transparent black */
+    z-index: 0;
+}
+
+/* ✅ Push content above overlay */
+h1,
+#drop-zone,
+button,
+.preview-img,
+.result-container {
+    position: relative;
+    z-index: 1;
+}
+
+/* ✅ Heading */
+h1 {
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+/* ✅ Drop Zone */
+#drop-zone {
+    border: 2px dashed #aaa;
+    padding: 30px;
+    width: 300px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.9);
+    cursor: pointer;
+    transition: background 0.3s ease;
+    border-radius: 10px;
+}
+
+#drop-zone.dragover {
+    background: #e0e0e0;
+}
+
+/* ✅ Button */
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* ✅ Preview Image */
+.preview-img {
+    max-width: 300px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* ✅ Results Layout */
+.result-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.result-container div {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* ✅ Prediction Styles */
+.prediction-real {
+    color: #00cc66;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.prediction-fake {
+    color: #ff3333;
+    font-weight: bold;
+    font-size: 1.2em;
+}

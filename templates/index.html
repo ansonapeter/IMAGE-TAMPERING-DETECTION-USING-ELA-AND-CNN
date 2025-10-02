@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ELA Image Analyzer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+    <!-- Background overlay (darkens background image slightly for better text visibility) -->
+    <div class="overlay"></div>
+
+    <div class="container">
+        <h1>ELA Image Analyzer</h1>
+
+        <div id="drop-zone">
+            <p>Drag & drop image here or click to upload</p>
+            <input type="file" id="fileInput" hidden>
+        </div>
+
+        <button id="uploadBtn">Upload & Analyze</button>
+
+        <div id="results"></div>
+    </div>
+</body>
+</html>
