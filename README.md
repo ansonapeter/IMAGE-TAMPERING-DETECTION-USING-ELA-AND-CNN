@@ -225,10 +225,9 @@ This project is created for educational and research purposes. Please respect th
 
 ## 👨‍💻 Author
 
-**Your Name/Organization**
-- Portfolio: [Link to your portfolio]
-- LinkedIn: [Your LinkedIn]
-- GitHub: [Your GitHub]
+**Ansona Peter**
+- LinkedIn: [https://linkedin.com/in/ansonapeter-ap1]
+- GitHub: [https://github.com/ansonapeter]
 
 ---
 
@@ -236,7 +235,7 @@ This project is created for educational and research purposes. Please respect th
 
 For questions, issues, or collaboration:
 - Open an issue on GitHub
-- Contact: [your-email@example.com]
+- Contact: [ansonapeter16@gmail.com]
 
 ---
 
